@@ -14,6 +14,8 @@
 		8C300AEC2B4673D700F72EF1 /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300AEB2B4673D700F72EF1 /* AppetizerListView.swift */; };
 		8C300AEE2B4673E400F72EF1 /* AppetizerAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300AED2B4673E400F72EF1 /* AppetizerAccountView.swift */; };
 		8C300AF02B4673ED00F72EF1 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300AEF2B4673ED00F72EF1 /* OrderView.swift */; };
+		8C300AF22B468B0500F72EF1 /* Appetizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300AF12B468B0400F72EF1 /* Appetizer.swift */; };
+		8C300AF42B4695ED00F72EF1 /* AppetizerTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300AF32B4695ED00F72EF1 /* AppetizerTitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		8C300AEB2B4673D700F72EF1 /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		8C300AED2B4673E400F72EF1 /* AppetizerAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerAccountView.swift; sourceTree = "<group>"; };
 		8C300AEF2B4673ED00F72EF1 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		8C300AF12B468B0400F72EF1 /* Appetizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appetizer.swift; sourceTree = "<group>"; };
+		8C300AF32B4695ED00F72EF1 /* AppetizerTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			children = (
 				8C300ADB2B4669EF00F72EF1 /* FoodAppApp.swift */,
 				8C300ADD2B4669EF00F72EF1 /* AppetizerTabView.swift */,
+				8C300AF12B468B0400F72EF1 /* Appetizer.swift */,
+				8C300AF32B4695ED00F72EF1 /* AppetizerTitleView.swift */,
 				8C300AEB2B4673D700F72EF1 /* AppetizerListView.swift */,
 				8C300AED2B4673E400F72EF1 /* AppetizerAccountView.swift */,
 				8C300AEF2B4673ED00F72EF1 /* OrderView.swift */,
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C300AF42B4695ED00F72EF1 /* AppetizerTitleView.swift in Sources */,
+				8C300AF22B468B0500F72EF1 /* Appetizer.swift in Sources */,
 				8C300ADE2B4669EF00F72EF1 /* AppetizerTabView.swift in Sources */,
 				8C300AEE2B4673E400F72EF1 /* AppetizerAccountView.swift in Sources */,
 				8C300ADC2B4669EF00F72EF1 /* FoodAppApp.swift in Sources */,
