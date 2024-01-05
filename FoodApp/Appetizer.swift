@@ -18,7 +18,7 @@ struct Appetizer: Decodable, Identifiable{
     let description: String
 }
 
-struct AppetizerRequest{
+struct AppetizerResponse:Decodable{
     let request: [Appetizer]
 }
 
