@@ -9,13 +9,14 @@ import Foundation
 
 struct Appetizer: Decodable, Identifiable{
     
-    var id: Int
-    let price: Double
-    let name: String
-    let calories: Int
-    let carbs: Int
-    let urlString: String
+    let id: Int
     let description: String
+    let name: String
+    let price: Double
+    let imageURL: String
+    let calories: Int
+    let protein: Int
+    let carbs: Int
 }
 
 struct AppetizerResponse:Decodable{
@@ -24,13 +25,7 @@ struct AppetizerResponse:Decodable{
 
 struct MockData {
     
-    static let sampleAppetizer = Appetizer(id: 1,
-                                           price: 8.99,
-                                           name: "Kebab",
-                                           calories: 300,
-                                           carbs: 14,
-                                           urlString: "kebab",
-                                           description: "This perfectly thin cut just melts in your mouth.")
+    static let sampleAppetizer = Appetizer(id: 11, description: "faf", name: "fafffafnainidbgihsdbgihsfafasfasfsfa", price: 12, imageURL: "asian-flank-steak-2", calories: 11, protein: 41, carbs: 14)
     
     static let appetizers = [sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer]
 }

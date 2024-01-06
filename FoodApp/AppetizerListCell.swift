@@ -13,18 +13,16 @@ struct AppetizerListCell: View {
     
     var body: some View {
         HStack {
-            Image(appetizer.urlString)
+            Image(appetizer.imageURL)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 160, height: 90, alignment: .center)
+                .frame(width: 120, height: 90, alignment: .center)
                 .cornerRadius(8)
                 
             VStack(alignment: .leading, spacing: 5){
                 Text(appetizer.name)
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .scaledToFit()
-                    .minimumScaleFactor(0.6)
                 Text("$\(appetizer.price, specifier: "%.2f")")             .font(.subheadline)
                     .fontWeight(.semibold)
                     .tint(.gray)
