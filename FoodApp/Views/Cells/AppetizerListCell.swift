@@ -6,15 +6,13 @@
 //
 
 import SwiftUI
-
 struct AppetizerListCell: View {
     
     let appetizer: Appetizer
     
     var body: some View {
         HStack {
-            Image(appetizer.imageURL)
-                .resizable()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90, alignment: .center)
                 .cornerRadius(8)
@@ -23,7 +21,8 @@ struct AppetizerListCell: View {
                 Text(appetizer.name)
                     .font(.title2)
                     .fontWeight(.semibold)
-                Text("$\(appetizer.price, specifier: "%.2f")")             .font(.subheadline)
+                Text("$\(appetizer.price, specifier: "%.2f")")             
+                    .font(.subheadline)
                     .fontWeight(.semibold)
                     .tint(.gray)
             }.padding(.leading)
