@@ -23,6 +23,10 @@
 		8C300B002B49A8F100F72EF1 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300AFF2B49A8F100F72EF1 /* LoadingView.swift */; };
 		8C300B022B49B2FC00F72EF1 /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B012B49B2FB00F72EF1 /* ColorExt.swift */; };
 		8C300B042B4A633A00F72EF1 /* remoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B032B4A633900F72EF1 /* remoteImage.swift */; };
+		8C300B132B4B933100F72EF1 /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B122B4B933100F72EF1 /* AppetizerDetailView.swift */; };
+		8C300B332B4BC5B700F72EF1 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 8C300B322B4BC5B700F72EF1 /* PopupView */; };
+		8C300B362B4CC8DC00F72EF1 /* xDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B352B4CC8DC00F72EF1 /* xDismissButton.swift */; };
+		8C300B382B4D0EE100F72EF1 /* AddToOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B372B4D0EE100F72EF1 /* AddToOrderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,9 @@
 		8C300AFF2B49A8F100F72EF1 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		8C300B012B49B2FB00F72EF1 /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
 		8C300B032B4A633900F72EF1 /* remoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = remoteImage.swift; sourceTree = "<group>"; };
+		8C300B122B4B933100F72EF1 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
+		8C300B352B4CC8DC00F72EF1 /* xDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDismissButton.swift; sourceTree = "<group>"; };
+		8C300B372B4D0EE100F72EF1 /* AddToOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C300B332B4BC5B700F72EF1 /* PopupView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +67,7 @@
 		8C300ACF2B4669EF00F72EF1 = {
 			isa = PBXGroup;
 			children = (
+				8C300B122B4B933100F72EF1 /* AppetizerDetailView.swift */,
 				8C300ADA2B4669EF00F72EF1 /* FoodApp */,
 				8C300AD92B4669EF00F72EF1 /* Products */,
 			);
@@ -134,6 +143,7 @@
 		8C300B092B4B023300F72EF1 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8C300B342B4CC88D00F72EF1 /* Button */,
 				8C300B0C2B4B028800F72EF1 /* Alerts */,
 				8C300B0A2B4B024100F72EF1 /* Managers */,
 			);
@@ -207,6 +217,15 @@
 			path = Image;
 			sourceTree = "<group>";
 		};
+		8C300B342B4CC88D00F72EF1 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8C300B352B4CC8DC00F72EF1 /* xDismissButton.swift */,
+				8C300B372B4D0EE100F72EF1 /* AddToOrderButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,6 +242,9 @@
 			dependencies = (
 			);
 			name = FoodApp;
+			packageProductDependencies = (
+				8C300B322B4BC5B700F72EF1 /* PopupView */,
+			);
 			productName = FoodApp;
 			productReference = 8C300AD82B4669EF00F72EF1 /* FoodApp.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +273,9 @@
 				Base,
 			);
 			mainGroup = 8C300ACF2B4669EF00F72EF1;
+			packageReferences = (
+				8C300B312B4BC5B700F72EF1 /* XCRemoteSwiftPackageReference "PopupView" */,
+			);
 			productRefGroup = 8C300AD92B4669EF00F72EF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -280,10 +305,13 @@
 				8C300AF82B479B8800F72EF1 /* NetworkManager.swift in Sources */,
 				8C300AF22B468B0500F72EF1 /* Appetizer.swift in Sources */,
 				8C300AFA2B479CA800F72EF1 /* APIError.swift in Sources */,
+				8C300B132B4B933100F72EF1 /* AppetizerDetailView.swift in Sources */,
 				8C300AFC2B483B5400F72EF1 /* AppetizerListViewModel.swift in Sources */,
 				8C300AF62B46A78B00F72EF1 /* AppetizerListCell.swift in Sources */,
+				8C300B362B4CC8DC00F72EF1 /* xDismissButton.swift in Sources */,
 				8C300B002B49A8F100F72EF1 /* LoadingView.swift in Sources */,
 				8C300ADE2B4669EF00F72EF1 /* AppetizerTabView.swift in Sources */,
+				8C300B382B4D0EE100F72EF1 /* AddToOrderButton.swift in Sources */,
 				8C300AEE2B4673E400F72EF1 /* AppetizerAccountView.swift in Sources */,
 				8C300ADC2B4669EF00F72EF1 /* FoodAppApp.swift in Sources */,
 				8C300AFE2B48A6DE00F72EF1 /* Alert.swift in Sources */,
@@ -498,6 +526,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8C300B312B4BC5B700F72EF1 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8C300B322B4BC5B700F72EF1 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C300B312B4BC5B700F72EF1 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8C300AD02B4669EF00F72EF1 /* Project object */;
 }

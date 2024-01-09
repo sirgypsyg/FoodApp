@@ -14,8 +14,12 @@ struct AppetizerListView: View {
     var body: some View {
         ZStack{
             NavigationView{
-                List(viewModel.appetizers){ appetizer in
-                    AppetizerListCell(appetizer: appetizer)
+                List{
+                    ForEach(viewModel.appetizers){ appetizer in
+                        NavigationLink(destination: AppetizerDetailView(appetizer: appetizer)){
+                            AppetizerListCell(appetizer: appetizer)
+                        }
+                    }
                 }
                 .navigationTitle("🍎 appetizers")
             }
