@@ -6,13 +6,12 @@ import PopupView
 
 struct AppetizerDetailView: View{
     let appetizer: Appetizer
-    
+    @Binding var isShowingDetailView: Bool
     var body: some View{
         VStack(spacing: 8){
-            
-            Image(appetizer.imageURL)
-                .resizable()
-                .scaledToFit()
+            AppetizerRemoteImage(urlString: appetizer.imageURL)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 225)
             
 
             Text(appetizer.name)
@@ -48,15 +47,17 @@ struct AppetizerDetailView: View{
             }
             Spacer()
             AddToOrderButton(appetizer: appetizer)
+                .padding()
         }
         .frame(width: 300, height: 500, alignment: .top)
         .background(Color(.systemBackground))
         .cornerRadius(14)
         .shadow(radius: 40)
-        .overlay(xDismissButton(), alignment: .topTrailing)
+        .overlay(xDismissButton(isShowingDetailView: $isShowingDetailView), alignment: .topTrailing)
+        
     }
 }
 
 #Preview {
-    AppetizerDetailView(appetizer: MockData.sampleAppetizer)
+    AppetizerDetailView(appetizer: MockData.sampleAppetizer, isShowingDetailView: .constant(false))
 }

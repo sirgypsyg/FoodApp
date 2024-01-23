@@ -15,10 +15,10 @@
 import SwiftUI
 
 struct xDismissButton: View {
-    
+    @Binding var isShowingDetailView: Bool
     var body: some View {
         Button{
-        
+            isShowingDetailView = false
         }label:{
             ZStack{
                 Circle()
@@ -36,5 +36,5 @@ struct xDismissButton: View {
 }
 
 #Preview {
-    xDismissButton()
+    xDismissButton(isShowingDetailView: .constant(false))
 }
