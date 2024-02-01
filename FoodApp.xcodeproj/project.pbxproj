@@ -27,6 +27,7 @@
 		8C300B332B4BC5B700F72EF1 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 8C300B322B4BC5B700F72EF1 /* PopupView */; };
 		8C300B362B4CC8DC00F72EF1 /* xDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B352B4CC8DC00F72EF1 /* xDismissButton.swift */; };
 		8C300B382B4D0EE100F72EF1 /* AddToOrderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300B372B4D0EE100F72EF1 /* AddToOrderButton.swift */; };
+		8C5915752B6C1AC300168700 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5915742B6C1AC300168700 /* AccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		8C300B122B4B933100F72EF1 /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 		8C300B352B4CC8DC00F72EF1 /* xDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xDismissButton.swift; sourceTree = "<group>"; };
 		8C300B372B4D0EE100F72EF1 /* AddToOrderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToOrderButton.swift; sourceTree = "<group>"; };
+		8C5915742B6C1AC300168700 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		8C300B062B4B017900F72EF1 /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
+				8C5915742B6C1AC300168700 /* AccountViewModel.swift */,
 				8C300AED2B4673E400F72EF1 /* AppetizerAccountView.swift */,
 			);
 			path = AccountView;
@@ -306,6 +309,7 @@
 				8C300AF22B468B0500F72EF1 /* Appetizer.swift in Sources */,
 				8C300AFA2B479CA800F72EF1 /* APIError.swift in Sources */,
 				8C300B132B4B933100F72EF1 /* AppetizerDetailView.swift in Sources */,
+				8C5915752B6C1AC300168700 /* AccountViewModel.swift in Sources */,
 				8C300AFC2B483B5400F72EF1 /* AppetizerListViewModel.swift in Sources */,
 				8C300AF62B46A78B00F72EF1 /* AppetizerListCell.swift in Sources */,
 				8C300B362B4CC8DC00F72EF1 /* xDismissButton.swift in Sources */,
