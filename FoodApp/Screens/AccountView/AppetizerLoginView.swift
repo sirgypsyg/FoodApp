@@ -1,5 +1,5 @@
 //
-//  AppetizerLoggedOfView.swift
+//  AppetizerLoginView.swift
 //  FoodApp
 //
 //  Created by Kuba on 04/01/2024.
@@ -10,50 +10,49 @@ import Firebase
 
 struct AppetizerLoginView: View {
     
-    @State private var email       = ""
-    @State private var password    = ""
-    
+    @StateObject var viewModel = AccountViewModel()
     
     var body: some View {
-        
         NavigationView {
-            Form {
-                // form field
-                Section(header: Text("Personal Info")) {
-                    InputView(text: $email, 
-                              title: "Email Adress",
-                              placeholder: "name@example.com")
-                        .keyboardType(.emailAddress)
-                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
-                        .autocorrectionDisabled(true)
-                    
-                    InputView(text: $password, 
-                              title: password,
-                              placeholder: "Enter your password",
-                              isSecureField: true)
-                    //
-                    Button{
-                        print("temp")
-                    }label: {
-                        Text("Log in")
+            VStack {
+                Form {
+                    Section(header: Text("Personal Info")) {
+                        TextField("Email", text: $viewModel.email)
+                            .keyboardType(.emailAddress)
+                            .autocapitalization(.none)
+                            .autocorrectionDisabled(true)
+                        TextField("Password", text: $viewModel.password)
+                        
+                        Button {
+                            print("temo")
+                        } label: {
+                            Text("Sign in")
+                        }
+                        .foregroundStyle(.brandSample)
                     }
                 }
-            }
-            .navigationTitle("Account view")
-            NavigationLink{
+                .navigationTitle("Account view")
                 
-            } label:{
-                HStack{
-                    Text("dont have an account?")
-                    Text("Sign up")
-                        .fontWeight(.bold)
+                Spacer() // Pushes the NavigationLink to the bottom
+                
+                NavigationLink(destination: AppetizerRegistrationView().navigationBarBackButtonHidden()) {
+                    HStack {
+                        Text("Don't have an account?")
+                        Text("Sign up")
+                            .fontWeight(.bold)
+                    }
+                    .font(.system(size: 14))
+                    .foregroundColor(.brandSample)
                 }
-                .font(.system(size: 14))
+                .padding()
+                .padding()
+                
             }
         }
     }
 }
+
+
     #Preview {
         AppetizerLoginView()
     }
-
