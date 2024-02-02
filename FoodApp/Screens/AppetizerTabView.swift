@@ -16,12 +16,12 @@ struct AppetizerTabView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            AppetizerListView()
+            AppetizerAccountView()
                 .tabItem {
                     Image(systemName: "person")
                     Text("person")
                 }
-            AppetizerListView()
+            OrderView()
                 .tabItem {
                     Image(systemName: "storefront")
                     Text("Order")

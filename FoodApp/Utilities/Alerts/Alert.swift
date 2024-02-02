@@ -40,5 +40,13 @@ struct AlertContext{
                                       message: Text("Please check given data"),
                                       dismissButton: .default(Text("OK")))
     
+    static let userSaveSuccess = AlertItem(title: Text("Logged in"),
+                                      message: Text("Feel free to order your favourite meal"),
+                                      dismissButton: .default(Text("OK")))
+    
+    static let userSaveFail = AlertItem(title: Text("Error"),
+                                      message: Text("Login unsuccessfull, try again"),
+                                      dismissButton: .default(Text("OK")))
+    
 }
 
