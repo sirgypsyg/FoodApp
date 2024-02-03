@@ -1,15 +1,12 @@
 //
-//  AccountViewModel.swift
+//  AccountData.swift
 //  FoodApp
 //
-//  Created by Kuba on 01/02/2024.
+//  Created by Kuba on 03/02/2024.
 //
-
-import Foundation
-import Firebase
 import SwiftUI
 
-final class AccountViewModel: ObservableObject  {
+final class AccountData: ObservableObject  {
     
     @Published var email: String    = ""
     @Published var password: String = ""

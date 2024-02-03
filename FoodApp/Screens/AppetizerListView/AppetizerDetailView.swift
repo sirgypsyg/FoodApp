@@ -1,8 +1,6 @@
 
 
 import SwiftUI
-import PopupView
-
 
 struct AppetizerDetailView: View{
     let appetizer: Appetizer

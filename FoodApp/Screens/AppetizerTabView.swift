@@ -9,6 +9,9 @@ import SwiftUI
 
 struct AppetizerTabView: View {
     
+    @EnvironmentObject var viewModel: AuthViewModel
+
+    
     var body: some View {
         TabView{
             AppetizerListView()
@@ -16,11 +19,20 @@ struct AppetizerTabView: View {
                     Image(systemName: "house")
                     Text("Home")
                 }
-            AppetizerLoginView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("person")
-                }
+            if viewModel.userSession != nil{
+                AppetizerProfileView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("person")
+                    }
+            } else{
+                AppetizerLoginView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("person")
+                    }
+            }
+            
             OrderView()
                 .tabItem {
                     Image(systemName: "storefront")
