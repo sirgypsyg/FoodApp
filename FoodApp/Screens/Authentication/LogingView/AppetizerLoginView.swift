@@ -38,7 +38,7 @@ struct AppetizerLoginView: View {
                             Text("Sign in")
                                 .frame(maxWidth: .infinity, alignment: .center)
                         }
-                        .foregroundStyle(.brandSample)
+                        .foregroundStyle(.cyan)
                         .disabled(!formIsValid)
                         .opacity(formIsValid ? 5.5 : 1.0)
 
@@ -56,7 +56,7 @@ struct AppetizerLoginView: View {
                             .fontWeight(.bold)
                     }
                     .font(.system(size: 14))
-                    .foregroundColor(.brandSample)
+                    .foregroundColor(.cyan)
                 }
                 .padding()
                 .padding()

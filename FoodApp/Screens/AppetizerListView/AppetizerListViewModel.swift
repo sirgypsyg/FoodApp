@@ -23,7 +23,7 @@ final class AppetizerListViewModel: ObservableObject {
                 switch result{
                 case .success(let appetizers):
                     self.appetizers = appetizers
-                case .failure(let error):
+                case .failure(let error): // errors
                     switch error{
                     case .invalidURL:
                         alertItem =  AlertContext.invalidURL

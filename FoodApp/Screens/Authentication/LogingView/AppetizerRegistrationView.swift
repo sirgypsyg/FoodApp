@@ -38,12 +38,17 @@ struct AppetizerRegistrationView: View {
                             Text("Sign up")
                                 .frame(maxWidth: .infinity, alignment: .center)
                         }
-                        .foregroundStyle(.brandSample)
+                        .foregroundStyle(.cyan)
                         .disabled(!formIsValid)
                         .opacity(formIsValid ? 5.5 : 1.0)
                     }
                 }
                 .navigationTitle("Register 👨‍💻")
+                .alert(item: $viewModel.alertItem){ alertItem in
+                            Alert(title: alertItem.title,
+                                  message: alertItem.message,
+                                  dismissButton: alertItem.dismissButton)
+                        }
                 
                 
                 
@@ -54,7 +59,7 @@ struct AppetizerRegistrationView: View {
                             .fontWeight(.bold)
                     }
                     .font(.system(size: 14))
-                    .foregroundColor(.brandSample)
+                    .foregroundColor(.cyan)
                 }
                 .padding()
                 .padding()

@@ -6,10 +6,16 @@
 //
 import SwiftUI
 
-final class AccountData: ObservableObject  {
+class AccountData: ObservableObject  {
     
     @Published var email: String    = ""
     @Published var password: String = ""
     @Published var fullName: String    = ""
+    
+
+    
+    
+
+    
     
 }

@@ -25,7 +25,44 @@ struct AppetizerResponse:Decodable{
 
 struct MockData {
     
-    static let sampleAppetizer = Appetizer(id: 11, description: "good food greetings", name: "pierogi", price: 12, imageURL: "asian-flank-steak-2", calories: 11, protein: 41, carbs: 14)
+    static let sampleAppetizer = Appetizer(id: 11,
+                                           description: "good food greetings",
+                                           name: "pierogi",
+                                           price: 12, 
+                                           imageURL: "asian-flank-steak-2",
+                                           calories: 11,
+                                           protein: 41,
+                                           carbs: 14)
     
     static let appetizers = [sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer,sampleAppetizer]
+    
+    static let samp1 = Appetizer(id: 123,
+                                description: "good food greetings",
+                                name: "pierogi",
+                                price: 12,
+                                imageURL: "asian-flank-steak-2",
+                                calories: 11,
+                                protein: 41,
+                                carbs: 14)
+    
+    static let samp2 = Appetizer(id: 131,
+                                description: "good food greetings",
+                                name: "pierogi",
+                                price: 12,
+                                imageURL: "asian-flank-steak-2",
+                                calories: 11,
+                                protein: 41,
+                                carbs: 14)
+    
+    static let samp3 = Appetizer(id: 22,
+                                description: "good food greetings",
+                                name: "pierogi",
+                                price: 12,
+                                imageURL: "asian-flank-steak-2",
+                                calories: 11,
+                                protein: 41,
+                                carbs: 14)
+    
+    
+    static let orderItems = [samp1, samp2, samp3]
 }

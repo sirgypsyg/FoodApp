@@ -20,7 +20,7 @@ struct AddToOrderButton: View {
             .buttonStyle(.borderedProminent)
             .font(.title3)
             .controlSize(.large)
-            .tint(Color(.label))
+            .tint(Color(.black))
             .buttonBorderShape(.roundedRectangle)
             .padding()
     }

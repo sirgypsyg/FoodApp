@@ -20,6 +20,7 @@ class AuthViewModel: ObservableObject{
     @Published var currentUser: User?
     @Published var alertItem: AlertItem?
     
+    
     init(){
         self.userSession = Auth.auth().currentUser
         
@@ -40,8 +41,10 @@ class AuthViewModel: ObservableObject{
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
             await fetchUser()
+            alertItem = AlertContext.userSaveSuccess;
         }catch{
             print("TSETing ")
+            alertItem = AlertContext.invalidData;
         }
     }
     
@@ -58,7 +61,10 @@ class AuthViewModel: ObservableObject{
             
             try await Firestore.firestore().collection("users").document(user.id).setData(encodedUser)
             await fetchUser()
+            alertItem = AlertContext.userSaveSuccess;
+            
         } catch {
+            alertItem = AlertContext.invalidData;
             print("Error:")
         }
     }
@@ -70,8 +76,9 @@ class AuthViewModel: ObservableObject{
             try Auth.auth().signOut()
             self.userSession = nil
             self.currentUser = nil
+            alertItem = AlertContext.logOff;
         } catch{
-            print("ELLERRA")
+            alertItem = AlertContext.userSaveFail;
         }
     }
     
