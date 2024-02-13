@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2060192B7B518100F8D830 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2060182B7B518100F8D830 /* EmptyState.swift */; };
 		8C300ADC2B4669EF00F72EF1 /* FoodAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300ADB2B4669EF00F72EF1 /* FoodAppApp.swift */; };
 		8C300ADE2B4669EF00F72EF1 /* AppetizerTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C300ADD2B4669EF00F72EF1 /* AppetizerTabView.swift */; };
 		8C300AE02B4669F100F72EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C300ADF2B4669F100F72EF1 /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C2060182B7B518100F8D830 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EmptyState.swift; path = FoodApp/Views/Cells/EmptyState.swift; sourceTree = SOURCE_ROOT; };
 		8C300ADB2B4669EF00F72EF1 /* FoodAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodAppApp.swift; sourceTree = "<group>"; };
 		8C300ADD2B4669EF00F72EF1 /* AppetizerTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerTabView.swift; sourceTree = "<group>"; };
 		8C300ADF2B4669F100F72EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		8C300B0D2B4B465600F72EF1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8C2060182B7B518100F8D830 /* EmptyState.swift */,
 				8CC5C1BC2B6DAF4100CFBB44 /* User.swift */,
 				8C300AF12B468B0400F72EF1 /* Appetizer.swift */,
 			);
@@ -426,6 +429,7 @@
 				8CC5C1EB2B6E158D00CFBB44 /* AccountData.swift in Sources */,
 				8C300AF02B4673ED00F72EF1 /* OrderView.swift in Sources */,
 				8CC5C1E92B6E130900CFBB44 /* InputView.swift in Sources */,
+				8C2060192B7B518100F8D830 /* EmptyState.swift in Sources */,
 				8C300B022B49B2FC00F72EF1 /* ColorExt.swift in Sources */,
 				8CC5C1BB2B6DABE800CFBB44 /* SettingsRowView.swift in Sources */,
 			);
